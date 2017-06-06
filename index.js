@@ -8,8 +8,11 @@ function handleSubmit(ev){
     const details = document.querySelector('#details')
     const name = f.personName.value
 
-    details.innerHTML += `<strong>${name}</strong>` 
+    const boldedName = document.createElement('strong')
+    boldedName.textContent = name 
 
+    details.appendChild(boldedName)
+    
     
 }
 
