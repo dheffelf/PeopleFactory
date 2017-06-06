@@ -6,9 +6,9 @@ function handleSubmit(ev){
     ev.preventDefault()
     const f = ev.target
     const details = document.querySelector('#details')
-    const name = f.person.value
+    const name = f.personName.value
 
-    details.innerHTML += name 
+    details.innerHTML += `<strong>${name}</strong>` 
 
     
 }
