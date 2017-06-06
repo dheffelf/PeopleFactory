@@ -6,12 +6,28 @@ function handleSubmit(ev){
     const f = ev.target
     const details = document.querySelector('#details')
     const name = f.personName.value
+    const favoriteColor = f.favoriteColor.value
+    const age = f.age.value
 
-    const boldedName = document.createElement('strong')
-    boldedName.textContent = name 
+    const colorDiv = `
+    <div style="background-color: ${favoriteColor}; width 100px; height: 50px;"></div>
+    `
 
-    details.appendChild(boldedName)
 
+
+   // const boldedName = document.createElement('strong')
+   // boldedName.textContent = name 
+
+   // details.appendChild(boldedName)
+
+   details.innerHTML = `
+    <ul>
+        <li>Name: ${name}</li>
+        <li>Favorite color: ${favoriteColor}</li>
+        <li>age: ${age}</li>
+   
+    </ul>
+   `
     
 }
 

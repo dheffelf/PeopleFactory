@@ -12,3 +12,12 @@
 
 
 *change appearance of paragraph (CSS) based on a value from the form
+
+
+
+
+
+
+day two 
+add form values to .details using
+document.createELement
