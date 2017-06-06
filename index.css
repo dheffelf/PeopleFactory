@@ -2,3 +2,9 @@ body{
     padding: 1rem;
     
 }
+
+section > div {
+    width: 80%;
+    margin: 1rem auto;
+}
+    

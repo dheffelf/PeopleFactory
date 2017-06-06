@@ -1,6 +1,5 @@
 const personForm = document.querySelector('#personForm')
 
-const last = document.querySelector('#last')
 
 function handleSubmit(ev){
     ev.preventDefault()
@@ -12,9 +11,8 @@ function handleSubmit(ev){
     boldedName.textContent = name 
 
     details.appendChild(boldedName)
-    
+
     
 }
 
 personForm.addEventListener('submit', handleSubmit)
-last.addEventListener('submit', handleSubmit)
