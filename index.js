@@ -41,8 +41,9 @@ function handleSubmit(ev){
     const age = f.age.value 
 
     const person = {
+
         name: f.personName.valu , 
-        favoriteColor: f.favoriteColor.value,
+        favoriteColor: renderColor(f.favoriteColor.value).outerHTML,
         age: f.age.value , 
 
     }
@@ -50,10 +51,10 @@ function handleSubmit(ev){
 
 
 
-    const list = document.createElement('ul')
+   // const list = document.createElement('ul')
 
     const list = renderList(person)
-    details 
+    details.appendChild(list)
 
 
 
