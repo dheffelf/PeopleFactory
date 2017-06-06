@@ -13,6 +13,25 @@ function renderColor(color){
 
 }
 
+function renderListItem(lable, value){
+    const item = document.createElement('li')
+    item.textContent = `&{label}: ${value}`
+    return item 
+}
+
+function renderList(personData){
+    const list = document.createElement('ul')
+    //array of name, favorite color and age 
+    Object.keys(personData).map(function(label){
+        const item = renderListItem(label, personData[label])
+        list.appendChild
+        
+    })
+    //call renderlistitem several times 
+    return list
+}
+
+
 function handleSubmit(ev){
     ev.preventDefault()
     const f = ev.target
@@ -21,9 +40,20 @@ function handleSubmit(ev){
     const favoriteColor = f.favoriteColor.value
     const age = f.age.value 
 
+    const person = {
+        name: f.personName.valu , 
+        favoriteColor: f.favoriteColor.value,
+        age: f.age.value , 
+
+    }
+
+
 
 
     const list = document.createElement('ul')
+
+    const list = renderList(person)
+    details 
 
 
 
